@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark"">
+  <a class="navbar-brand" href="#">
+  University Predictor
+  </a>
+</nav>
+
+<body>
+<div class="jumbotron">
+  <h1 class="display-4">Hello, Graduates!</h1>
+  <p class="lead">This website will help you predict which University you will likely get into!</p>
+  <hr class="my-4">
+  <p>It requires some of your data in order to do so.</p>
+  <p class="lead">
+    <a class="btn btn-danger btn-lg" href="#" role="button">All the best!</a>
+  </p>
+</div>
+<div class="container">
+  <div class="row">
+  <div class="col-sm-8">
+<div class="text-center">
+<form action="/login" method="post">
+<p>Enter your GRE score</p>
+<p><input type="number" min="130" max="340" name="ms"></p>
+<p>Enter your TOEFL score</p>
+<p><input type="number" min="0" max="120" name="ad"></p>
+<p>Enter your University Rating</p>
+<p><input type="number"min="1" max="5" name="rd"></p>
+<p>Enter your SOP</p>
+<p><input type="number" min="0" max="5" step="0.01" name="sop"></p>
+<p>Enter your LOR</p>
+<p><input type="number" min="0" max="5" step="0.01" name="lor"></p>
+<p>Enter your CGPA</p>
+<p><input type="number" min="0" max="10" step="0.01" name="cgpa"></p>
+<p>Have you done any Research?</p>
+<label for = "states"> Choose 1 if yes, Otherwise 0</label>
+<select name="s">
+<option value="1">1</option>
+<option value="0">0</option>
+</select>
+<p> <input type="submit" value="Submit"></p>
+</form>
+</div>
+</div>
+<div class="row">
+<div col="col-sm-4">
+<div class="d-flex justify-content-end " id="xyz" >
+<div class="card text-white bg-danger mb-3 text-center" style="max-width: 18rem;top:0px">
+  <div class="card-header">Prediction</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">By considering that the above details provided are true. Your chance of likely getting admitted is <b>{{Something}}</b>%</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</div>
+</html>
